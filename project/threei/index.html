@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-based Resume | Product Manager</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <div id="app" class="overflow-x-hidden">
+        <!-- Header & Navigation -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="link-2" class="text-primary"></i>
+                        <h1 class="text-xl font-bold text-primary">UX-driven Growth</h1>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                        <a href="#intro" class="hover:text-primary transition-colors">소개</a>
+                        <a href="#problem" class="hover:text-primary transition-colors">문제 정의</a>
+                        <a href="#analysis" class="hover:text-primary transition-colors">검증 절차</a>
+                        <a href="#solution" class="hover:text-primary transition-colors">개선 과정</a>
+                        <a href="#result" class="hover:text-primary transition-colors">성과</a>
+                        <a href="#conclusion" class="hover:text-primary transition-colors">결론</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 뒤로가기 버튼 헤더 바로 아래, container로 정렬 맞춤 (오설록/riiid과 동일) -->
+        <div class="container mx-auto px-6">
+          <a href="../../index.html" class="back-btn" style="display:block; margin-top:80px; margin-bottom:32px; font-weight:bold; color:#2563eb; font-size:1.1rem;">← 메인으로</a>
+        </div>
+
+        <main class="container mx-auto px-6 pt-24 md:pt-32">
+            <!-- 1. Intro -->
+            <section id="intro" class="text-center py-16 md:py-24 animated-section">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-primary">'기기 연동 UX' 개선</span>
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">사용자 이탈률 감소를 위한 PM 성장기</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    PM 인턴으로서 하드웨어와 크롬 익스텐션 연동 과정의 높은 이탈률 문제를 발견하고, UX 리서치, 데이터 분석, 와이어프레임 설계를 통해 개선을 주도하여 사용자 이탈률 12% 감소를 달성한 프로젝트입니다.
+                </p>
+            </section>
+
+            <!-- 2. Problem Definition -->
+            <section id="problem" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">1. 문제 정의: 높은 이탈률의 원인을 찾아서</h2>
+                    <p class="mt-4 text-lg text-slate-600">"왜 사용자들은 연동 과정에서 포기할까?" 데이터와 CS에서 문제의 실마리를 찾았습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="bar-chart-2" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">현황 분석</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">자사 하드웨어와 크롬 익스텐션의 연동 과정에서 사용자 이탈이 높게 발생하는 상황을 데이터로 확인했습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="search" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">문제 지점 발견</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">사용자가 직접 앱과 하드웨어를 연동해야 하는 복잡하고 불친절한 프로세스가 핵심 문제임을 발견했습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="crosshair" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">가설 수립</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">CS 데이터 분석 결과, "직관적인 온보딩과 UX 개선을 통해 이탈률을 15% 이상 감소시킬 수 있다"는 가설을 세웠습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="goal" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">프로젝트 목표</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">기기 연동 완료율을 높이고 사용자 이탈률을 최소 15% 이상 감소시켜, 매끄러운 고객 경험을 제공하는 것을 목표로 설정했습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Validation Process -->
+            <section id="analysis" class="py-16 md:py-24 bg-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">2. 검증 절차와 기준: 성공을 어떻게 측정할 것인가</h2>
+                    <p class="mt-4 text-lg text-slate-600">가설을 객관적으로 검증하기 위해 명확한 지표와 기준을 설정했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="bar-chart-horizontal" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">KPI 설정</h3>
+                        <p class="mt-2 text-slate-600">핵심 성과 지표(KPI)로 '기기 연동 완료율', '사용자 이탈률', '관련 CS 문의 수'를 설정하여 개선 효과를 측정했습니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="git-compare" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">데이터 비교 분석</h3>
+                        <p class="mt-2 text-slate-600">개선안 배포 전후의 데이터를 비교 분석하여, UX 개선이 실제 사용자 행동에 미치는 영향을 정량적으로 파악했습니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">성공 기준 정의</h3>
+                        <p class="mt-2 text-slate-600">'사용자 이탈률 15% 이상 감소'와 '관련 CS 문의 수의 유의미한 감소'를 프로젝트 성공의 기준으로 정의했습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Solution Process -->
+            <section id="solution" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">3. 개선 과정: 가설을 해결책으로</h2>
+                    <p class="mt-4 text-lg text-slate-600">문제 정의와 데이터 분석을 바탕으로 구체적인 해결책을 설계하고 실행했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">솔루션 실행</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">문제 현황 파악 및 개선점 발굴</h4>
+                                <p class="text-slate-600 mt-2">사용자 데이터와 CS를 분석하고 경쟁사 UX를 리서치하여 서비스의 현황과 개선 포인트를 구체화했습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">UI/UX 개선 주도</h4>
+                                <p class="text-slate-600 mt-2">사용자 이탈을 막기 위한 직관적인 온보딩 화면 와이어프레임을 직접 작성하고 UI/UX 개선안을 도출했습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">디자이너, 개발자와 협업</h4>
+                                <p class="text-slate-600 mt-2">도출된 개선안과 와이어프레임을 바탕으로 디자이너, 개발자와 긴밀하게 협업하며 실제 개발을 진행했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">핵심 개선 사항</h3>
+                        <div class="bg-white p-6 rounded-lg border border-slate-200 text-slate-600">
+                            <ul class="space-y-4 ia-list">
+                                <li><i data-lucide="presentation" class="icon-sm text-primary"></i> <strong>온보딩 프로세스 도입</strong>: 사용자가 연동 과정을 쉽게 이해하고 따라올 수 있도록 단계별 가이드를 제공하는 온보딩 화면을 새롭게 도입했습니다.</li>
+                                <li><i data-lucide="mouse-pointer-click" class="icon-sm text-primary"></i> <strong>직관적인 연동 UI/UX</strong>: 복잡했던 연동 단계를 최소화하고, 시각적으로 명확한 인터페이스를 설계하여 사용자가 직관적으로 기기를 연동할 수 있도록 개선했습니다.</li>
+                                <li><i data-lucide="help-circle" class="icon-sm text-primary"></i> <strong>오류 안내 및 도움말 강화</strong>: 연동 과정에서 발생할 수 있는 문제에 대한 명확한 오류 메시지와 해결 방법을 안내하여 사용자의 불편을 최소화했습니다.</li>
+                                <li><i data-lucide="box-select" class="icon-sm text-primary"></i> <strong>명확한 CTA 버튼</strong>: 각 단계에서 사용자가 수행해야 할 행동을 명확하게 인지할 수 있도록 Call-to-Action 버튼의 문구와 디자인을 개선했습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Results -->
+            <section id="result" class="py-16 md:py-24 bg-slate-800 text-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">4. 성과: 데이터로 증명된 UX 개선 효과</h2>
+                    <p class="mt-4 text-lg text-slate-300">개선안 배포 이후, 사용자 이탈률은 눈에 띄게 감소했으며 관련 CS 문의 또한 급감했습니다.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="user-x" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">핵심 지표 개선</h4>
+                        <p class="text-2xl font-bold text-white">사용자 이탈률</p>
+                        <p class="text-6xl font-extrabold text-accent mt-3">12%</p>
+                        <p class="font-semibold text-xl text-white">감소</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="message-circle-off" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">업무 효율 증대</h4>
+                        <p class="text-2xl font-bold text-white">월간 관련 CS 문의</p>
+                         <p class="text-6xl font-extrabold text-accent mt-3">한 자릿수</p>
+                        <p class="font-semibold text-xl text-white">미만 달성</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Conclusion -->
+            <section id="conclusion" class="py-16 md:py-24 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">결론 및 회고</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    본 프로젝트는 PM으로서 데이터를 기반으로 문제를 정의하고, 사용자 중심의 해결책을 설계하며, 유관부서와 협업하여 실질적인 비즈니스 성과를 창출한 경험입니다. 특히 온보딩 도입과 직관적인 프로세스 설계가 사용자 경험 개선에 얼마나 중요한지 체감했으며, 가설 수립-실행-검증의 사이클을 통해 성장할 수 있었던 값진 기회였습니다.
+                </p>
+                <button class="mt-8 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl">
+                    연락하기
+                </button>
+            </section>
+        </main>
+        
+        <footer class="text-center py-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; 2025 Product Manager Portfolio. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
