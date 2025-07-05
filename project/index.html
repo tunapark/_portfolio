@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromoRadar.today | Project Proposal</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="https://esm.run/framer-motion"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+    <div id="app" class="overflow-x-hidden">
+        <!-- Header & Navigation -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="radar" class="text-primary"></i>
+                        <h1 class="text-xl font-bold text-primary">PromoRadar.today</h1>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                        <a href="#intro" class="hover:text-primary transition-colors">소개</a>
+                        <a href="#target" class="hover:text-primary transition-colors">타겟 분석</a>
+                        <a href="#strategy" class="hover:text-primary transition-colors">UX/UI 전략</a>
+                        <a href="#features" class="hover:text-primary transition-colors">핵심 기능</a>
+                        <a href="#design" class="hover:text-primary transition-colors">디자인</a>
+                        <a href="#conclusion" class="hover:text-primary transition-colors">결론</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <!-- 뒤로가기 버튼 헤더 아래에 배치 -->
+        <div style="height:64px;"></div>
+        <div style="margin: 0 0 24px 0; padding-left: 24px;">
+            <button onclick="window.history.back()" style="background: none; border: none; color: #4a90e2; font-size: 1.1em; cursor: pointer;">← 뒤로가기</button>
+        </div>
+
+        <main class="container mx-auto px-6 pt-24 md:pt-32">
+            <!-- 1. Intro -->
+            <section id="intro" class="text-center py-16 md:py-24 animated-section">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-primary">PromoRadar.today</span>
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">오늘의 기획전 트래킹 & 큐레이션</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    프로젝트 제안서. 이커머스 프로모션의 홍수 속에서 마케터와 기획자를 위한 '의미 있는 신호'를 발견하는 인텔리전스 플랫폼을 제안합니다.
+                </p>
+            </section>
+
+            <!-- 2. Target Audience & Market Analysis -->
+            <section id="target" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">타겟 고객 및 시장 분석</h2>
+                    <p class="mt-4 text-lg text-slate-600">모든 사용자는 단순히 '목록'이 아닌, '맥락화된 정보'와 '실행 가능한 통찰'을 원합니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="target" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">퍼포먼스 마케터</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">"어떤 프로모션이 가장 높은 전환율을 보이는가?"</p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-500 list-disc list-inside">
+                            <li>경쟁사 성과 데이터 분석</li>
+                            <li>채널/혜택별 효율 분석</li>
+                            <li>A/B 테스트 아이디어 수집</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="gem" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">브랜드 마케터</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">"우리 브랜드 가치를 높일 창의적인 프로모션은?"</p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-500 list-disc list-inside">
+                            <li>최신 프로모션 트렌드 파악</li>
+                            <li>시즌/이벤트 캠페인 아이디어</li>
+                            <li>인상적인 비주얼/카피 사례</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="shopping-cart" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">이커머스 운영자</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">"지금 당장 실행할 효과적인 프로모션은?"</p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-500 list-disc list-inside">
+                            <li>경쟁사 실시간 현황 파악</li>
+                            <li>재고 소진/매출 증대 전략</li>
+                            <li>프로모션 캘린더 관리</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="figma" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">기획자 / UX 디자이너</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">"어떻게 제시해야 참여를 극대화할 수 있을까?"</p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-500 list-disc list-inside">
+                            <li>효과적인 프로모션 UI/UX 패턴</li>
+                            <li>개인화 추천 로직 사례</li>
+                            <li>사용자 구매 여정 설계</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. UX/UI Strategy -->
+            <section id="strategy" class="py-16 md:py-24 bg-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">UX/UI 전략</h2>
+                    <p class="mt-4 text-lg text-slate-600">전문가의 분석 데스크처럼, 데이터에 온전히 집중할 수 있는 환경을 제공합니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="zoom-in" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">명료함 우선의 원칙</h3>
+                        <p class="mt-2 text-slate-600">충분한 여백, 명확한 타이포그래피 위계, 절제된 색상 사용으로 콘텐츠의 가독성과 집중도를 극대화합니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="shield-check" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">데이터 기반의 신뢰</h3>
+                        <p class="mt-2 text-slate-600">안정적인 컬러 팔레트와 예측 가능한 UI 패턴을 적용하여 데이터의 정확성과 신뢰성을 시각적으로 보증합니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="mouse-pointer-click" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">행동을 유도하는 디자인</h3>
+                        <p class="mt-2 text-slate-600">정보 나열을 넘어, 사용자의 핵심 과업(저장, 분석, 공유)을 완수하도록 Accent Color를 통해 자연스럽게 유도합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Core Features & Information Architecture -->
+            <section id="features" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">핵심 기능 및 정보 구조</h2>
+                    <p class="mt-4 text-lg text-slate-600">사용자의 핵심 과업(Jobs-to-be-Done)을 해결하는 데 집중합니다.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">핵심 기능</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">타겟 큐레이션 탭</h4>
+                                <p class="text-slate-600 mt-2">퍼포먼스, 크리에이티브, 트렌드 등 역할에 맞는 '업무용 렌즈'를 제공하여 탐색 시간을 단축시킵니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">지능형 태그 필터</h4>
+                                <p class="text-slate-600 mt-2">다양한 카테고리(혜택, 대상, 시즌)의 태그를 중첩 적용(AND/OR)하여 원하는 정보를 정밀하게 찾습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">My Radar (개인 워크스페이스)</h4>
+                                <p class="text-slate-600 mt-2">관심 프로모션을 폴더별로 저장, 관리하고 메모를 추가하여 자신만의 인사이트 아카이브를 구축합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">정보 구조 (IA)</h3>
+                        <div class="bg-white p-6 rounded-lg border border-slate-200 text-slate-600">
+                            <ul class="space-y-2 ia-list">
+                                <li><i data-lucide="home" class="icon-sm"></i> <strong>대시보드</strong>: 개인화된 요약 및 시작점</li>
+                                <li><i data-lucide="search" class="icon-sm"></i> <strong>프로모션 탐색</strong>: 핵심 탐색 및 필터링
+                                    <ul class="mt-2 space-y-2 pl-6">
+                                        <li><i data-lucide="file-text" class="icon-sm"></i> <strong>프로모션 상세</strong>: 심층 정보 및 분석</li>
+                                    </ul>
+                                </li>
+                                <li><i data-lucide="bar-chart-3" class="icon-sm"></i> <strong>인사이트 리포트</strong>: 데이터 기반 트렌드 분석</li>
+                                <li><i data-lucide="bookmark" class="icon-sm"></i> <strong>My Radar</strong>: 개인화된 스크랩 및 관리</li>
+                                <li><i data-lucide="user" class="icon-sm"></i> <strong>사용자 계정</strong>: 프로필 및 환경 설정</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Visual Design & Mockups -->
+            <section id="design" class="py-16 md:py-24 bg-slate-800 text-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">비주얼 디자인 및 목업</h2>
+                    <p class="mt-4 text-lg text-slate-300">신뢰감과 전문성을 전달하고, 데이터에 집중할 수 있는 시각적 환경</p>
+                </div>
+                
+                <!-- Style Guide -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-white">Style Guide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Color Palette -->
+                        <div>
+                            <h4 class="font-semibold mb-4 text-lg text-slate-200">Color Palette</h4>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div>
+                                    <div class="w-full h-16 rounded-lg" style="background-color: var(--color-primary);"></div>
+                                    <p class="mt-2 font-bold text-sm">Primary</p>
+                                    <p class="text-xs text-slate-400">#1A3A6D</p>
+                                </div>
+                                <div>
+                                    <div class="w-full h-16 rounded-lg" style="background-color: var(--color-secondary);"></div>
+                                    <p class="mt-2 font-bold text-sm">Secondary</p>
+                                    <p class="text-xs text-slate-400">#4A90E2</p>
+                                </div>
+                                <div>
+                                    <div class="w-full h-16 rounded-lg" style="background-color: var(--color-accent);"></div>
+                                    <p class="mt-2 font-bold text-sm">Accent</p>
+                                    <p class="text-xs text-slate-400">#F5A623</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 mt-4">
+                                <div><div class="w-full h-10 rounded" style="background-color: #1E293B;"></div></div>
+                                <div><div class="w-full h-10 rounded" style="background-color: #64748B;"></div></div>
+                                <div><div class="w-full h-10 rounded" style="background-color: #CBD5E1;"></div></div>
+                                <div><div class="w-full h-10 rounded" style="background-color: #F1F5F9;"></div></div>
+                            </div>
+                             <p class="mt-2 font-semibold text-sm">Neutral (Slate)</p>
+                        </div>
+                        
+                        <!-- Typography -->
+                        <div>
+                            <h4 class="font-semibold mb-4 text-lg text-slate-200">Typography (Pretendard)</h4>
+                            <div class="space-y-2">
+                                <p style="font-size: 36px; font-weight: 700;">H1 Title</p>
+                                <p style="font-size: 28px; font-weight: 700;">H2 Section Title</p>
+                                <p style="font-size: 20px; font-weight: 600;">H3 Widget Title</p>
+                                <p style="font-size: 16px; font-weight: 400;">Body (p) 본문 텍스트입니다.</p>
+                                <p style="font-size: 14px; font-weight: 400;">Caption 보조 정보입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mockups -->
+                <div class="max-w-7xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-white">UI Mockups</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="space-y-4 mockup-card">
+                            <img src="https://r2.flowith.net/files/o/1751730945431-promoradar_today_main_dashboard_ui_mockup_index_0@1024x1024.png" alt="Main Dashboard Mockup" class="rounded-lg shadow-2xl w-full h-auto object-cover transition-transform duration-300">
+                            <h4 class="text-center font-semibold text-lg">1. 메인 대시보드</h4>
+                        </div>
+                        <div class="space-y-4 mockup-card">
+                            <img src="https://r2.flowith.net/files/o/1751730908578-promoradar_today_website_ui_mockup_index_1@1024x1024.png" alt="Explore/Filter Screen Mockup" class="rounded-lg shadow-2xl w-full h-auto object-cover transition-transform duration-300">
+                            <h4 class="text-center font-semibold text-lg">2. 탐색/필터 화면</h4>
+                        </div>
+                        <div class="space-y-4 mockup-card">
+                            <img src="https://r2.flowith.net/files/o/1751730920682-promoradar_today_promotion_detail_page_ui_mockup_index_2@1024x1024.png" alt="Promotion Detail Page Mockup" class="rounded-lg shadow-2xl w-full h-auto object-cover transition-transform duration-300">
+                            <h4 class="text-center font-semibold text-lg">3. 프로모션 상세 페이지</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Conclusion -->
+            <section id="conclusion" class="py-16 md:py-24 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">결론 및 다음 단계</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    PromoRadar.today는 단순한 '딜 어그리게이터'를 넘어, 마케팅 및 이커머스 전문가들을 위한 **'프로모션 인텔리전스 플랫폼'**으로 포지셔닝합니다. 제안된 전략과 디자인을 바탕으로 프로토타입을 제작하고 사용자 테스트를 진행하여, 성공적인 MVP(Minimum Viable Product)를 구축해 나갈 것을 제안합니다.
+                </p>
+                <button class="mt-8 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl">
+                    프로젝트 시작하기
+                </button>
+            </section>
+        </main>
+        
+        <footer class="text-center py-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; 2025 PromoRadar.today. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
