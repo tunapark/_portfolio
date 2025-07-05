@@ -1,0 +1,68 @@
+:root {
+  --color-primary: #1A3A6D;
+  --color-primary-dark: #122B52;
+  --color-secondary: #4A90E2;
+  --color-accent: #F5A623;
+  --color-text: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-border: #CBD5E1;
+  --color-bg-light: #F1F5F9;
+  --color-bg-base: #F8FAFC;
+  --color-white: #FFFFFF;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: var(--color-bg-base);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-dark {
+    background-color: var(--color-primary-dark);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.ia-list ul {
+    border-left: 1px solid var(--color-border);
+}
+
+.ia-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.ia-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 1rem;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.ia-list .icon-sm {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    color: var(--color-secondary);
+}
+
+.mockup-card img:hover {
+    transform: scale(1.03);
+}
