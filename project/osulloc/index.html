@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-based Resume | PO & Sales</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <div id="app" class="overflow-x-hidden">
+        <!-- Header & Navigation -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="bar-chart-big" class="text-primary"></i>
+                        <h1 class="text-xl font-bold text-primary">PO & Sales Case Study</h1>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                        <a href="#intro" class="hover:text-primary transition-colors">소개</a>
+                        <a href="#problem" class="hover:text-primary transition-colors">문제 정의</a>
+                        <a href="#analysis" class="hover:text-primary transition-colors">가설 수립</a>
+                        <a href="#solution" class="hover:text-primary transition-colors">실행 과정</a>
+                        <a href="#result" class="hover:text-primary transition-colors">성과</a>
+                        <a href="#conclusion" class="hover:text-primary transition-colors">결론</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 뒤로가기 버튼 헤더 바로 아래, container로 정렬 맞춤 -->
+        <div class="container mx-auto px-6">
+          <a href="../../index.html" class="back-btn" style="display:block; margin-top:80px; margin-bottom:32px; font-weight:bold; color:#2563eb; font-size:1.1rem;">← 메인으로</a>
+        </div>
+
+        <main class="container mx-auto px-6 pt-24 md:pt-32">
+            <!-- 1. Intro -->
+            <section id="intro" class="text-center py-16 md:py-24 animated-section">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-primary">'오설록 해차'</span> 콘텐츠 리디자인
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">스토리 기반 전환 설계로 매출 48% 성장</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    PO & Sales 역할로 오설록 '해차' 상품의 콘텐츠 리디자인과 UX 개선을 주도했습니다. 감성적 스토리텔링과 광고 시나리오 설계를 통해 재구매 동기를 부여하고 신규 전환을 창출하여, 최종적으로 전년 대비 48%의 판매 성장을 달성한 프로젝트입니다.
+                </p>
+            </section>
+
+            <!-- 2. Problem Definition -->
+            <section id="problem" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">1. 문제 정의: 판매되고 있었지만, 더 잘 팔 수 있었다</h2>
+                    <p class="mt-4 text-lg text-slate-600">"왜 성장이 정체되었을까?" 현황 분석을 통해 개선 포인트를 발견했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="line-chart" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">현황 진단</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">기존 해차 상품은 자사몰에서 꾸준히 판매되고 있었지만, 성장은 정체된 상태였습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="file-warning" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">콘텐츠의 한계</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">상품 상세 페이지의 정보 전달력이 약하고, 제품의 진짜 매력을 충분히 보여주지 못했습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="megaphone" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">광고 소재의 문제</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">광고 소재 또한 기능(할인 등) 위주로 구성되어, 브랜드 가치 전달에 명확한 한계가 있었습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="goal" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">프로젝트 목표</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">스토리텔링 강화를 통해 기존 고객의 재구매를 유도하고, 신규 고객 전환율을 극대화하는 것을 목표로 설정했습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Hypothesis -->
+            <section id="analysis" class="py-16 md:py-24 bg-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">2. 가설 수립: '어떻게' 구매까지 이끌 것인가?</h2>
+                    <p class="mt-4 text-lg text-slate-600">문제 해결을 위해, 감성과 스토리에 기반한 세 가지 핵심 가설을 세웠습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="gift" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">가치 재정의</h3>
+                        <p class="mt-2 text-slate-600">고가 사은품에 대한 기대감을 자극하는 스토리텔링과 시각 요소를 강화하면 구매 전환율이 오를 것이다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="book-heart" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">감성적 맥락 부여</h3>
+                        <p class="mt-2 text-slate-600">'해차' 자체에 대한 감성적 설명을 더해 콘셉트를 각인시키면 브랜드 충성도가 높아질 것이다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="image" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">스토리 중심 광고</h3>
+                        <p class="mt-2 text-slate-600">기능이 아닌 스토리를 중심으로 한 캐러셀 광고는 사용자의 주목을 끌고, 재구매와 신규 전환을 만들 것이다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Solution Process -->
+            <section id="solution" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">3. 실행 과정: 가설을 구체적인 해결책으로</h2>
+                    <p class="mt-4 text-lg text-slate-600">수립된 가설을 바탕으로 UX, 콘텐츠, 광고 영역에서 구체적인 개선을 실행했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">실행 전략 (Execution)</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">UX 개선: 탐색 유도</h4>
+                                <p class="text-slate-600 mt-2">단순 이미지 나열 방식에서 벗어나, 사은품 가치를 체감할 수 있는 감정 기반 콘텐츠를 추가하고 '보러가기' 등 클릭 유도형 UI를 구성했습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">광고 기획: 스토리텔링 중심</h4>
+                                <p class="text-slate-600 mt-2">'해차란 무엇인가'를 중심으로 한 스토리텔링형 캐러셀 광고를 기획하여 상세 페이지로의 연결 흐름을 최적화했습니다.</p>
+                            </div>
+                             <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">콘텐츠 리디자인: 가치 각인</h4>
+                                <p class="text-slate-600 mt-2">제품의 스토리를 상세 페이지와 광고에 일관되게 적용하여 '해차' 콘셉트를 고객에게 감성적으로 각인시켰습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">검증 및 측정</h3>
+                        <div class="bg-white p-6 rounded-lg border border-slate-200 text-slate-600">
+                            <ul class="space-y-4 ia-list">
+                                <li><i data-lucide="flask-conical" class="icon-sm text-primary"></i> <strong>실험 목표</strong>: 스토리 기반 콘텐츠 및 광고의 판매 기여도 검증</li>
+                                <li><i data-lucide="crosshair" class="icon-sm text-primary"></i> <strong>핵심 지표 (Primary)</strong>
+                                    <ul class="mt-2 pl-6"><li>해차 판매량 (YoY)</li></ul>
+                                </li>
+                                <li><i data-lucide="list-checks" class="icon-sm text-primary"></i> <strong>보조 지표 (Secondary)</strong>
+                                    <ul class="mt-2 pl-6"><li>광고 클릭률 (CTR)</li><li>상세페이지 전환율 (CVR)</li></ul>
+                                </li>
+                                 <li><i data-lucide="check-circle" class="icon-sm text-primary"></i> <strong>성공 기준</strong>
+                                    <ul class="mt-2 pl-6"><li>핵심 및 보조 지표의 유의미한 동반 상승</li></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Results -->
+            <section id="result" class="py-16 md:py-24 bg-slate-800 text-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">4. 성과: 데이터로 증명된 48%의 성장</h2>
+                    <p class="mt-4 text-lg text-slate-300">실행 결과, 판매량과 전환 지표 모두에서 괄목할 만한 성과를 달성했습니다.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="rocket" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">핵심 지표 성과</h4>
+                        <p class="text-2xl font-bold text-white">'해차' 판매량</p>
+                        <p class="text-6xl font-extrabold text-accent mt-3">48%</p>
+                        <p class="font-semibold text-xl text-white">전년 대비 증가</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="trending-up" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">전환율 기여</h4>
+                        <p class="text-2xl font-bold text-white">광고 CTR & CVR</p>
+                         <p class="text-6xl font-extrabold text-accent mt-3">동반</p>
+                        <p class="font-semibold text-xl text-white">상승</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Conclusion -->
+            <section id="conclusion" class="py-16 md:py-24 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">결론 및 회고</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    본 프로젝트는 기능적 소구에서 벗어나, 감성적 스토리텔링과 고객 경험 설계가 어떻게 직접적인 매출 성장으로 이어질 수 있는지 증명한 사례입니다. 성공 요인은 ① 사은품 가치에 대한 몰입감 유도, ② '해차' 콘셉트를 각인시킨 스토리텔링 광고, ③ 탐색을 유도하는 UI 개선이었습니다. 이를 통해 제품의 가치를 새롭게 정의하고 비즈니스 성과를 창출할 수 있었습니다.
+                </p>
+                <button class="mt-8 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl" onclick="location.href='mailto:example@email.com'">
+                    연락하기
+                </button>
+            </section>
+        </main>
+        
+        <footer class="text-center py-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; 2025 PO & Sales Portfolio. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
