@@ -1,0 +1,194 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+    --primary: #1A3A6D;
+    --primary-dark: #122B52;
+    --primary-darker: #0A1D3A;
+    --secondary: #4A90E2;
+    --accent: #F5A623;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --border-color: #CBD5E1;
+    --bg-light: #F1F5F9;
+    --bg-lighter: #F8FAFC;
+    --white: #FFFFFF;
+    --red: #EF4444;
+    --green: #22C55E;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: var(--bg-lighter);
+    color: var(--text-primary);
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    margin-bottom: -1px; /* Overlap border */
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: var(--primary);
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.tag-btn {
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--bg-light);
+    color: #475569; /* slate-600 */
+    border: 1px solid transparent;
+}
+
+.tag-btn:hover {
+    background-color: #E2E8F0; /* slate-200 */
+    color: #334155; /* slate-700 */
+}
+
+.tag-btn.selected {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.input-base {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-base:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.promo-card {
+    background-color: var(--white);
+    border: 1px solid #E2E8F0; /* slate-200 */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Dashboard Styles */
+.dashboard-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.kpi-card {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.chart-container {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.creative-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    aspect-ratio: 4 / 3;
+}
+
+.creative-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.creative-gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.word-cloud-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+    margin: 0.25rem;
+    font-weight: 500;
+}
+
+/* Card Variants */
+.performance-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+.creative-card {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.25rem;
+    color: white;
+}
+
+.creative-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    z-index: 1;
+}
+
+.creative-card .card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.creative-card .card-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+.creative-card:hover .card-bg-image {
+    transform: scale(1.05);
+}
