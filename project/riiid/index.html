@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-based Resume | Data Strategy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <div id="app" class="overflow-x-hidden">
+        <!-- Header & Navigation -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="bar-chart-big" class="text-primary"></i>
+                        <h1 class="text-xl font-bold text-primary">Data-driven Policy</h1>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                        <a href="#intro" class="hover:text-primary transition-colors">소개</a>
+                        <a href="#problem" class="hover:text-primary transition-colors">문제 정의</a>
+                        <a href="#analysis" class="hover:text-primary transition-colors">검증 절차</a>
+                        <a href="#solution" class="hover:text-primary transition-colors">분석 및 설계</a>
+                        <a href="#result" class="hover:text-primary transition-colors">성과</a>
+                        <a href="#conclusion" class="hover:text-primary transition-colors">결론</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 뒤로가기 버튼 헤더 바로 아래, container로 정렬 맞춤 (오설록과 동일) -->
+        <div class="container mx-auto px-6">
+          <a href="../../index.html" class="back-btn" style="display:block; margin-top:80px; margin-bottom:32px; font-weight:bold; color:#2563eb; font-size:1.1rem;">← 메인으로</a>
+        </div>
+
+        <main class="container mx-auto px-6 pt-24 md:pt-32">
+            
+            <!-- 1. Intro -->
+            <section id="intro" class="text-center py-16 md:py-24 animated-section">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-primary">'데이터 기반 혜택 정책' 설계</span>
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">부정 사용자 30% 감소시킨 데이터 전략</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    Data Strategy Intern으로서 로그/구매 이력 등 데이터 분석을 통해 부정 사용자를 정의하고, 정책 개선을 제안하여 혜택 비용 손실율을 크게 낮추고 부정 사용률 30% 감소를 달성한 프로젝트입니다.
+                </p>
+            </section>
+
+            <!-- 2. Problem Definition -->
+            <section id="problem" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">1. 문제 정의 및 가설 수립</h2>
+                    <p class="mt-4 text-lg text-slate-600">"왜 동일 고객이 여러 계정으로 혜택을 받을까?" 어뷰징의 근본 원인을 파헤쳤습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="trending-down" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">문제 상황</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">동일 고객이 다수 계정을 생성해 혜택을 반복 수령하는 부정 사용자가 지속적으로 발생하고 있었습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="shield-off" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">기존 방식의 한계</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">단순 블랙리스트 방식으로는 변칙적인 부정 사용자를 실시간으로 탐지하고 대응하는 데 한계가 있었습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="lightbulb" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">가설 수립</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">접속 패턴, 복귀 주기, 디바이스 정보 등 로그를 통합 분석하면 어뷰징 행동의 공통 기준을 설계할 수 있다는 가설을 세웠습니다.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="goal" class="w-8 h-8 text-accent"></i>
+                            <h3 class="text-xl font-bold text-primary">프로젝트 목표</h3>
+                        </div>
+                        <p class="mt-4 text-slate-600">데이터 기반 부정 사용자 분류 체계를 설계하고, 이를 통해 혜택 비용 손실률을 감소시키는 것을 목표로 설정했습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Validation Process -->
+            <section id="analysis" class="py-16 md:py-24 bg-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">2. 검증 절차와 기준: 성공을 어떻게 측정할 것인가</h2>
+                    <p class="mt-4 text-lg text-slate-600">가설을 객관적으로 검증하기 위해 명확한 지표와 분석 방법을 정의했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="list-checks" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">KPI 설정</h3>
+                        <p class="mt-2 text-slate-600">핵심 성과 지표(KPI)로 '혜택 남용 계정 수'와 '혜택 비용 손실률'을 설정하여 개선 효과를 정량적으로 추적했습니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="sigma" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">분석 방법론</h3>
+                        <p class="mt-2 text-slate-600">로그 데이터를 기반으로 클러스터링 및 스코어링 모델을 활용하여 부정 사용 의심 계정을 정량적으로 추출했습니다.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="inline-block bg-primary/10 p-4 rounded-full">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-primary"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">성공 기준 정의</h3>
+                        <p class="mt-2 text-slate-600">'부정 사용률 20% 이상 감소' 및 '혜택 비용 손실률의 유의미한 감소'를 프로젝트 성공 기준으로 정의했습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Solution Process -->
+            <section id="solution" class="py-16 md:py-24 animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">3. 분석 및 정책 설계: 데이터를 해결책으로</h2>
+                    <p class="mt-4 text-lg text-slate-600">데이터 분석을 바탕으로 부정 사용자를 분류하고, 이를 기반으로 효과적인 정책 개선안을 도출했습니다.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">솔루션 실행 과정</h3>
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">이상 행동 패턴 분석</h4>
+                                <p class="text-slate-600 mt-2">로그, 접속 기기, 구매 이력 등 다양한 데이터를 통합하여 다중 계정 사용, 비정상 복귀 등 이상 행동 패턴을 분석했습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">부정 사용자 분류 체계 설계</h4>
+                                <p class="text-slate-600 mt-2">클러스터링과 스코어링 모델을 적용하여 부정 사용자를 위험도에 따라 분류하고 세그먼트화하는 체계를 설계했습니다.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg border border-slate-200">
+                                <h4 class="font-bold text-lg">혜택 정책 개선안 제안</h4>
+                                <p class="text-slate-600 mt-2">분석 결과를 바탕으로 부정 사용자의 혜택 획득을 제한하고, 비용 손실을 최소화하는 새로운 혜택 정책을 설계하여 제안했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-primary">핵심 결과물</h3>
+                        <div class="bg-white p-6 rounded-lg border border-slate-200 text-slate-600">
+                            <ul class="space-y-4 ia-list">
+                                <li><i data-lucide="database-zap" class="icon-sm text-primary"></i> <strong>이상 행동 지표 발굴</strong>: 동일 IP/기기 다수 계정 접속, 짧은 복귀 주기 등 부정 사용을 식별할 수 있는 핵심 데이터 지표를 발굴했습니다.</li>
+                                <li><i data-lucide="users" class="icon-sm text-primary"></i> <strong>부정 사용자 세그먼트화</strong>: 분석 모델을 통해 '상습 어뷰저', '의심 사용자', '정상 사용자'로 그룹을 나누어 차등 대응 전략의 기반을 마련했습니다.</li>
+                                <li><i data-lucide="shield-check" class="icon-sm text-primary"></i> <strong>데이터 기반 혜택 정책</strong>: 사용자 세그먼트별로 혜택 지급 조건과 한도를 조정하는 새로운 정책을 제안하여 실제 서비스에 반영했습니다.</li>
+                                <li><i data-lucide="line-chart" class="icon-sm text-primary"></i> <strong>모니터링 대시보드 제안</strong>: 부정 사용률과 정책 효과를 지속적으로 추적할 수 있는 모니터링 체계를 제안하여 빠른 의사결정을 지원했습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Results -->
+            <section id="result" class="py-16 md:py-24 bg-slate-800 text-white rounded-2xl animated-section">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">4. 성과: 데이터로 증명된 정책 개선 효과</h2>
+                    <p class="mt-4 text-lg text-slate-300">정책 개선 이후, 부정 사용 관련 지표들이 눈에 띄게 개선되었으며 실제 혜택 조건 조정에 반영되었습니다.</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="user-minus" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">핵심 지표 개선</h4>
+                        <p class="text-2xl font-bold text-white">부정 사용률</p>
+                        <p class="text-6xl font-extrabold text-accent mt-3">30%</p>
+                        <p class="font-semibold text-xl text-white">감소</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-8 rounded-xl text-center flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                        <i data-lucide="wallet-cards" class="w-16 h-16 mx-auto text-accent mb-4"></i>
+                        <h4 class="font-semibold text-xl mb-2 text-slate-200">비용 효율 증대</h4>
+                        <p class="text-2xl font-bold text-white">혜택 비용 손실률</p>
+                         <p class="text-6xl font-extrabold text-accent mt-3">대폭</p>
+                        <p class="font-semibold text-xl text-white">감소</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Conclusion -->
+            <section id="conclusion" class="py-16 md:py-24 text-center animated-section">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">결론 및 회고</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                    본 프로젝트는 데이터 분석으로 비즈니스 문제를 정의하고, 정량적 모델링으로 해결책을 도출하여 실제 정책에 반영시킨 경험입니다. 숨겨진 데이터 패턴을 발견하여 부정 사용자를 효과적으로 분류하고, 데이터 기반 의사결정이 비즈니스 손실 감소와 서비스 건전성 향상에 기여하는 과정을 체감했습니다. 분석에서 끝나는 것이 아닌, 실제 정책 변화를 이끌어냈다는 점에서 성장할 수 있었던 값진 기회였습니다.
+                </p>
+                <button class="mt-8 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl">
+                    연락하기
+                </button>
+            </section>
+        </main>
+        
+        <footer class="text-center py-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500">&copy; 2025 Data-driven Project Portfolio. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
